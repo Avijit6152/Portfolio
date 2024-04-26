@@ -1,0 +1,542 @@
+/* Reset styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* Basic styles */
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to bottom right, #b68fcf, #f6fa02);
+       
+    }
+    
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 40px;
+    text-align: center;
+    
+
+    
+}
+
+nav {
+    margin-top: 20px;
+    display: flex; /* Change display to flex */
+    justify-content: flex-end; /* Align items to the right */
+   
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    display: inline; /* Keep the display as inline */
+    margin-right: 100px; /* Adjust margin-left for spacing */
+    
+    
+}
+
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: #8f8f8f;
+}
+
+
+
+
+section {
+    padding: 40px 0;
+   
+   
+}
+
+
+
+
+
+#about {
+    padding: 40px 0;
+    background-image: linear-gradient(to bottom right, #5761B2, #1FC5A8); 
+    
+}
+
+
+
+
+#about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+#about h2 {
+    font-size: 30px;
+   
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 60px;
+    inline-size: 1.5;
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #faf8f8;
+    margin-bottom: 15px;
+    font-family:cursive;
+}
+
+button{
+    color: #faf9f9;
+    background-color: #000;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+} 
+
+
+/* Add this CSS to your existing stylesheet */
+#frontend-projects{
+    background-image: linear-gradient(to bottom right, #fa0362,#fd9902);
+}
+
+#backend-projects{
+    background-image: linear-gradient(to bottom right, #03b6fd,#02fac4);
+}
+
+.projects-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.projects-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-55px);
+}
+
+.project-card img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+}
+
+.project-info .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-info .btn:hover {
+    background-color: #555;
+}
+
+.vp { 
+    float: right;
+}
+
+.vp button {
+    
+    background-color: #333;
+    color: #fff;
+    width: 100px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.vp button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#certificates{
+    background-image: linear-gradient(to bottom right, #17f803,#b0fa05);
+}
+
+
+
+
+ .certificates-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+   
+} 
+
+.certificate-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.certificate-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease;
+    background-color: #fcfafa;
+}
+
+.certificate-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-55px);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+}
+
+.certificate-info {
+    padding: 20px;
+}
+
+.certificate-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.certificate-info p {
+    font-size: 16px;
+    color: #080808;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8a4fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    /* transition: background-color 0.5s ease; */
+}
+
+.btn:hover {
+    background-color: #6c2bd9;
+}
+
+
+
+
+
+
+
+
+
+
+.awards-section {
+    background-image: linear-gradient(to bottom right, #f80375,#fa0526bd);
+    padding: 80px 0;
+}
+
+.awards-section h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+
+.award-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.award-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.award-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-55px);
+}
+
+.award-card img {
+    width: 100%;
+    height: auto;
+}
+
+.award-info {
+    padding: 20px;
+}
+
+.award-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.award-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* Add this CSS to your existing stylesheet */
+
+#future-goals {
+    background-image: linear-gradient(to bottom right, #03f8af,#05ddfabd);
+    padding: 40px 0;
+}
+
+#future-goals .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#future-goals h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+#future-goals p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family:cursive;
+}
+
+#future-goals p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Styling for Contact Me section */
+#contact {
+    padding: 40px 0;
+    background-image: linear-gradient(to bottom right, #b4eaf0, #c97b7b);
+}
+
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    height: 100px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333; /* Change the background color as desired */
+    color: #fff; /* Change the text color as desired */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container p {
+    margin: 0;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container ul li:last-child {
+    margin-right: 0;
+}
+
+.container a {
+   
+    color: #fff; /* Change the link color as desired */
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
