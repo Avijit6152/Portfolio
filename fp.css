@@ -144,6 +144,45 @@ main {
 }
 
 
+/* fp.css */
+
+/* Technology Used Section */
+.technology-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.technology-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.technology-section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.technology-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.technology-section li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Optional: Add styles for links if needed */
+.technology-section a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.technology-section a:hover {
+    color: #0056b3; /* Darker blue color on hover */
+}
 
 
 
