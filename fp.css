@@ -106,7 +106,7 @@ main {
 
 .project-card:hover {
     transform: translateY(-5px);
-    transform: scale(1.4);
+    transform: scale(1.2);
     /* transform: translateX(55px); */
 }
 

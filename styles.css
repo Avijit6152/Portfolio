@@ -24,46 +24,52 @@
 header {
     background-color: #333;
     color: #fff;
+    text-align: center;
     padding: 20px 0;
+    height: 150px;
 }
 
 header h1 {
-    font-size: 40px;
-    text-align: center;
-    
-
-    
+    margin: 0;
 }
 
 nav {
-    margin-top: 20px;
-    display: flex; /* Change display to flex */
-    justify-content: flex-end; /* Align items to the right */
-   
+    float: left; /* Shift the navigation to the left side */
+    margin-top: 40px;
 }
 
 nav ul {
     list-style-type: none;
-    
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the navigation links */
 }
 
 nav ul li {
-    display: inline; /* Keep the display as inline */
-    margin-right: 100px; /* Adjust margin-left for spacing */
-    
-    
+    display: inline;
+    margin-left: 60px; /* Adjust margin-left for spacing */
+}
+
+nav ul li :hover{
+    color: #9e9e9e;
 }
 
 
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin from the first list item */
+}
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    text-align: center;
+    padding: 10px 15px; /* Add padding for better clickability */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover{
-    color: #8f8f8f;
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
 }
 
 
@@ -115,6 +121,10 @@ section {
     border-radius: 50%;
     margin-right: 60px;
     inline-size: 1.5;
+}
+
+.avatar :hover{
+    transform: scale(1.4);
 }
 
 .bio {
@@ -179,7 +189,8 @@ button{
 }
 
 .project-card:hover {
-    transform: translateY(-55px);
+    transform: translateY(-5px);
+    transform: scale(1.2);
 }
 
 .project-card img {
@@ -239,24 +250,9 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #certificates{
     background-image: linear-gradient(to bottom right, #17f803,#b0fa05);
 }
-
-
-
 
  .certificates-section h2 {
     text-align: center;
@@ -274,14 +270,17 @@ button{
 .certificate-card {
     width: calc(33.33% - 20px);
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s ease;
-    background-color: #fcfafa;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
 }
+
 
 .certificate-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-55px);
+    transform: translateY(-5px);
+    transform: scale(1.2);
 }
 
 .certificate-card img {
@@ -320,13 +319,6 @@ button{
 
 
 
-
-
-
-
-
-
-
 .awards-section {
     background-image: linear-gradient(to bottom right, #f80375,#fa0526bd);
     padding: 80px 0;
@@ -355,8 +347,9 @@ button{
 }
 
 .award-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
     transform: translateY(-55px);
+    transform: scale(1.2);
 }
 
 .award-card img {
@@ -472,12 +465,10 @@ button{
 
 
 
-
 footer {
-    background-color: #333; /* Change the background color as desired */
-    color: #fff; /* Change the text color as desired */
-    padding: 20px 0;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
 }
 
 .container {
@@ -486,33 +477,61 @@ footer {
     padding: 0 20px;
 }
 
-.container p {
-    margin: 0;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.container ul {
-    list-style: none;
-    padding: 0;
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
 }
 
-.container ul li {
-    margin-top: 20px;
-    display: inline-block;
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.socials a i{
+    color: #fcf9f9;
     margin-right: 10px;
 }
 
-.container ul li:last-child {
-    margin-right: 0;
+
+
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+    
 }
 
-.container a {
+.footer-section.links ul li {
+    margin-bottom: 10px;
    
-    color: #fff; /* Change the link color as desired */
+}
+
+.footer-section.links ul li a{
+
+    color: #f7f5f5;
     text-decoration: none;
 }
 
-.container a:hover {
-    text-decoration: underline;
+
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
 }
 
 
